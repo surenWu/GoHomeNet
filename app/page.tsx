@@ -3,7 +3,6 @@ import { Card } from "@/components/ui/card";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Edit, Ellipsis, Trash } from "lucide-react";
 import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-3" >
@@ -12,7 +11,7 @@ export default function Home() {
             <div className="grid grid-rows-5">
                 <div className="relative w-full h-full row-span-4">
                     <Image
-                        src="/Snipaste.png"
+                        src="/public/Snipaste.png"
                         fill
                         alt='[图片]'
                         className="object-cover rounded-t-lg p-0 m-0" />
