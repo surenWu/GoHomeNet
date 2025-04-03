@@ -70,10 +70,12 @@
 
 //   );
 // }
-import { Mail, Linkedin, Github, FileText, Home, User, Briefcase, GraduationCap, Code } from "lucide-react";
+import { Mail, Linkedin, Github, FileText, User, Briefcase, GraduationCap, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle,  CardContent } from "@/components/ui/card";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
+// import Link from "next/link";
 
 export default function HomePage() {
     return (
@@ -83,11 +85,10 @@ export default function HomePage() {
                 <header className="text-center mb-12">
                     <div className="flex flex-row justify-between">
                         <div className="flex flex-col items-start">
-                            <h1 className="text-4xl font-bold text-gray-900 ">吴 某</h1>
+                            <h1 className="text-4xl font-bold text-gray-900 ">Mr. Wu</h1>
                             <p className="text-lg text-gray-600 mt-2 justify-between">Web Developer</p>
-
-
                             <div className="flex justify-center space-x-4 mt-4">
+                                <Link href={'subpage/222'} >start</Link>
                                 <DropdownMenu>
                                     <DropdownMenuTrigger>
                                         <Button variant="outline" asChild >
